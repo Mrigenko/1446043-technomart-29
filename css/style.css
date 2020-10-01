@@ -1,0 +1,260 @@
+:root {
+    /*.navigation-header*/
+    --hard-blue: #293449;
+    --basic-red: #EE3643;
+    --white: #FFFFFF;
+    --basic-green: #63A63E;
+    --black-extra: rgba(0 0 0 0.0001);
+    /*.header-contact*/
+    --basic-blue: #32425C;
+    /*.content*/
+    --orange-hard: #FFBF47;
+    --blue-bright: #3BBCE3;
+    --lilac: #DC91D8;
+    --green-light: #8ED78F;
+    --orange-dark: #FFC047;
+    /*.popular-product .popular-manuf*/
+    --grey: #F9F5F0;
+    --red: #EE3643;
+    --blue-san: #32425C;
+    /*.service*/
+    --blue-light-light: #F1F5F7;
+    --grey-light: #888888;
+    /*.footer*/
+    --blue-medium: #293449;
+    --blue-dark: #212A3A;
+    --black: #000000;
+}
+
+body {
+    min-width: 1220px;
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--black);
+    text-transform: uppercase;
+    background-color: var(--black-extra)
+    /*background-color: var(--black)*/
+    ;
+    /*background-image: url("../img/bg.png")*/
+    ;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-navigation {
+    background-color: var(--hard-blue)
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cite-navigation a {
+    color: var(--white);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.cite-navigation {
+    /*background: #293449;*/
+    list-style: none;
+}
+
+
+/* header-contact*/
+
+.header-contact {
+    list-style: none;
+    text-decoration: none;
+}
+
+.header-contact h1 {
+    color: var(--basic-red);
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.header-index {
+    color: var(--basic-red);
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.header-contact>p {
+    color: var(--basic-blue);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.header-contact-in {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 21px;
+    line-height: 30px;
+}
+
+
+/*main-navigation*/
+
+.main-navigation {
+    text-decoration: none;
+    list-style: none;
+    background-color: var(--basic-blue);
+}
+
+
+/*.main-navigation ul {}*/
+
+.main-navigation li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.main-navigation a {
+    color: var(--white);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+/*container*/
+
+
+/*content*/
+
+.container {
+    background-color: var(--grey-light);
+}
+
+
+/*.materials>a,
+.toll>a,
+.tehnic>a,
+.sales>a,
+.delivery>a {
+    text-decoration: none;
+    color: var(--white);
+}*/
+
+.content ul {
+    list-style: none;
+}
+
+.content p {
+    color: var(--white);
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.materials {
+    width: 300px;
+    height: 123px;
+    background-color: var(--orange-hard);
+}
+
+.toll {
+    width: 300px;
+    height: 123px;
+    background-color: var(--blue-bright);
+}
+
+.tehnic {
+    width: 300px;
+    height: 123px;
+    background-color: var(--lilac);
+}
+
+.sales {
+    width: 300px;
+    height: 123px;
+    background-color: var(--green-light);
+}
+
+.delivery {
+    width: 300px;
+    height: 123px;
+    background-color: var(--orange-dark);
+}
+
+.sliders {
+    width: 620px;
+    height: 266px;
+    background-color: #EE3643;
+}
+
+
+/*popular*/
+
+.popular {
+    position: absolute;
+    width: 940px;
+    height: 427px;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/*.popular a {
+    text-decoration: none;
+    list-style: none;
+}*/
+
+
+/*.popular li {
+    list-style: none;
+    text-decoration: none;
+}*/
+
+.popular-product {
+    width: 940px;
+    height: 89;
+    background-color: var(--grey);
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--blue-san);
+}
+
+li>.perforator {
+    width: 220px;
+    height: 318px;
+    background-color: var(--white);
+}
+
+
+/*Популярные производители*/
+
+.popular-manuf {
+    width: 940px;
+    height: 419px;
+    background-color: var(--white);
+}
+
+.popular-manufact {
+    width: 940px;
+    height: 89px;
+    background-color: var(--grey);
+}
+
+.manufacturing li {
+    width: 220px;
+    height: 145px;
+    background-color: var(--white);
+}
+
+
+/*Service*/
+
+.service {
+    width: 1200px;
+    height: 522px;
+    background-color: var(--blue-light-light);
+}
