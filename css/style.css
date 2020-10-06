@@ -347,13 +347,11 @@ img {
 }
 
 .popular-manufact {
-    background-color: var(-);
-    background: var(--grey);
+    background-color: var(--grey);
 }
 
 .popular-manufact-name {
-    background-color: var(-);
-    background: var(--grey);
+    background-color: var(--grey);
     font-size: 30px;
     line-height: 30px;
 }
