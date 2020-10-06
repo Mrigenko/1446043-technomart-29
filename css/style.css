@@ -3,19 +3,28 @@
     --hard-blue: #293449;
     --basic-red: #EE3643;
     --white: #FFFFFF;
+    --white-active: rgba(255, 255, 255, 0.5);
     --basic-green: #63A63E;
-    --black-extra: rgba(0 0 0 0.0001);
+    --green-hover: #5FBB2D;
+    --green-active: #63A63E;
+    --black-extra-light: rgba(0, 0, 0, 0.0001);
+    --blue-active: #161D29;
+    --blue-medium-active: #1D2739;
+    --grey-light-active: #C5C5C5;
     /*.header-contact*/
-    --basic-blue: #32425C;
+    --basic-blue: #131b29;
     /*.content*/
+    --grey-light-opacity: #A9A9A9;
     --orange-hard: #FFBF47;
     --blue-bright: #3BBCE3;
     --lilac: #DC91D8;
     --green-light: #8ED78F;
     --orange-dark: #FFC047;
+    --red-hover-slide: #CA2C37;
     /*.popular-product .popular-manuf*/
     --grey: #F9F5F0;
     --red: #EE3643;
+    --red-active: #BA2732;
     --blue-san: #32425C;
     /*.service*/
     --blue-light-light: #F1F5F7;
@@ -24,6 +33,11 @@
     --blue-medium: #293449;
     --blue-dark: #212A3A;
     --black: #000000;
+    --special-white: rgba(255, 255, 255, 0.3);
+    --grey-oldprice: #A9A9A9;
+    --white-footer: #F3F7F9;
+    --yellow-footer: #FFD180;
+    /*--blue-footer-logo-gradient: linear-gradient(0deg, #212A3A, #212A3A);*/
 }
 
 body {
@@ -35,226 +49,469 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: var(--black);
-    text-transform: uppercase;
-    background-color: var(--black-extra)
+    /*text-transform: uppercase;*/
+    background-color: var(--black-extra-light);
     /*background-color: var(--black)*/
-    ;
     /*background-image: url("../img/bg.png")*/
-    ;
-    background-position: top center;
-    background-repeat: no-repeat;
+    /*background-position: top center;
+        background-repeat: no-repeat;*/
 }
 
-a {
-    text-decoration: none;
-}
 
-.header-navigation {
-    background-color: var(--hard-blue)
-}
+/*.page a {
+         text-decoration: none;
+        color: var(--white)
+       }*/
 
 img {
     max-width: 100%;
     height: auto;
-}
-
-.cite-navigation a {
-    color: var(--white);
-    font-size: 18px;
-    line-height: 24px;
-}
-
-.cite-navigation {
-    /*background: #293449;*/
-    list-style: none;
-}
-
-
-/* header-contact*/
-
-.header-contact {
-    list-style: none;
-    text-decoration: none;
-}
-
-.header-contact h1 {
-    color: var(--basic-red);
-    font-size: 16px;
-    line-height: 23px;
-}
-
-.header-index {
-    color: var(--basic-red);
-    font-size: 21px;
-    line-height: 30px;
-}
-
-.header-contact>p {
-    color: var(--basic-blue);
-    font-size: 14px;
-    line-height: 24px;
-}
-
-.header-contact-in {
-    text-decoration: none;
-    color: var(--black);
-    font-size: 21px;
-    line-height: 30px;
-}
-
-
-/*main-navigation*/
-
-.main-navigation {
-    text-decoration: none;
-    list-style: none;
-    background-color: var(--basic-blue);
-}
-
-
-/*.main-navigation ul {}*/
-
-.main-navigation li {
-    text-decoration: none;
-    list-style: none;
-}
-
-.main-navigation a {
-    color: var(--white);
-    font-size: 18px;
-    line-height: 24px;
-}
-
-
-/*container*/
-
-
-/*content*/
-
-.container {
     background-color: var(--grey-light);
 }
 
 
-/*.materials>a,
-.toll>a,
-.tehnic>a,
-.sales>a,
-.delivery>a {
+/*header*/
+
+.header {
+    background-color: var(--black-extra-light)rgba(0, 0, 0, 0.0001);
+}
+
+.header-navigation {
+    background-color: var(--blue-medium);
+}
+
+.header-logo {
+    background-color: var(--red);
+}
+
+.header-logo:active {
+    background-color: var(--red-active);
+}
+
+.header-nav-bookmarks,
+.header-nav-basket {
+    text-decoration: none;
+    background-color: var(--hard-blue);
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.header-nav-bookmarks:active {
+    background-color: var(--blue-active);
+    color: var(--white-active);
+}
+
+.header-nav-basket:active {
+    color: var(--white-active);
+}
+
+.header-nav-chekout {
+    text-decoration: none;
+    background-color: var(--basic-green);
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.header-nav-chekout:hover {
+    background-color: var(--green-hover);
+}
+
+.header-nav-chekout:active {
+    background-color: var(--green-active);
+    color: var(--white-active);
+}
+
+.navigation-link {
     text-decoration: none;
     color: var(--white);
-}*/
+}
 
-.content ul {
+.linked {
     list-style: none;
 }
 
-.content p {
+.header-contact-in,
+.header-contact-reg {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 21px;
+    line-height: 21px;
+    background-color: var(--white);
+    text-transform: capitalize;
+    list-style: none;
+}
+
+.header-contact-in:hover,
+.header-contact-reg:hover {
+    color: var(--basic-red);
+}
+
+.header-contact-in:active,
+.header-contact-reg:active {
+    color: var(--grey-light-active);
+}
+
+.main-navigation {
+    background-color: var(--blue-san);
+}
+
+.main-nav-down {
+    list-style: none;
+}
+
+.main-nav {
+    text-decoration: none;
+    /*list-style: none;*/
+    color: var(--white);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.main-nav:hover {
+    background-color: var(--blue-medium);
+}
+
+.main-nav:active {
+    background-color: var(--blue-medium-active);
+    color: var(--white-active)
+}
+
+.header-name {
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--red);
+    font-style: italic;
+}
+
+.header-contact-tell {
+    text-decoration: none;
+    color: var(--red);
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.header-address {
+    color: var(--blue-san);
+    font-size: 14px;
+    line-height: 24px;
+    /*text-transform: capitalize;*/
+}
+
+.main-navigation-navy {
+    background-color: var(--blue-san)#32425C;
+}
+
+.main-nav {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--white);
+}
+
+
+/*Main*/
+
+.material {
+    background-color: var(--white);
+}
+
+.materials {
+    background-color: var(--orange-hard);
+}
+
+.materials-name {
     color: var(--white);
     font-size: 24px;
     line-height: 30px;
 }
 
-.materials {
-    width: 300px;
-    height: 123px;
-    background-color: var(--orange-hard);
+.materials-desc {
+    text-decoration: none;
+    background-color: var(--special-white);
+    color: var(--white);
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.materials-desc:hover {
+    background-color: var(--grey-light-active);
+}
+
+.materials-desc:active {
+    background-color: var(--grey-light-opacity);
+    opacity: 0, 3;
 }
 
 .toll {
-    width: 300px;
-    height: 123px;
     background-color: var(--blue-bright);
 }
 
 .tehnic {
-    width: 300px;
-    height: 123px;
-    background-color: var(--lilac);
+    background-color: var(--lilac)
 }
 
 .sales {
-    width: 300px;
-    height: 123px;
     background-color: var(--green-light);
 }
 
 .delivery {
-    width: 300px;
-    height: 123px;
     background-color: var(--orange-dark);
 }
 
 .sliders {
-    width: 620px;
-    height: 266px;
-    background-color: #EE3643;
+    background-color: var(--grey-light);
+}
+
+.slide-name {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.slide-name-desc {
+    color: var(--white);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: var(--red);
+}
+
+.btn:hover {
+    background-color: var(--red-hover-slide);
+}
+
+.btn:active {
+    background-color: var(--red-active);
 }
 
 
-/*popular*/
-
-.popular {
-    position: absolute;
-    width: 940px;
-    height: 427px;
-    text-decoration: none;
-    list-style: none;
-}
-
-
-/*.popular a {
-    text-decoration: none;
-    list-style: none;
-}*/
-
-
-/*.popular li {
-    list-style: none;
-    text-decoration: none;
-}*/
+/*popular-product*/
 
 .popular-product {
-    width: 940px;
-    height: 89;
     background-color: var(--grey);
+}
+
+.popular-product-name {
     font-size: 30px;
     line-height: 30px;
-    color: var(--blue-san);
+    color: var(--basic-blue);
 }
 
-li>.perforator {
-    width: 220px;
-    height: 318px;
+.btn-allname {
+    text-decoration: none;
+    background-color: var(--basic-red);
+    color: var(--white);
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.perforator {
+    font-size: 17px;
+    line-height: 18px;
     background-color: var(--white);
 }
 
+.perforator-name {
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--black);
+}
 
-/*Популярные производители*/
+.perforator-oldprice {
+    font-size: 17px;
+    line-height: 18px;
+    color: var(--grey-oldprice);
+    text-decoration: line-through;
+}
+
+.btn-perf {
+    text-decoration: none;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 17px;
+    line-height: 18px;
+}
+
+
+/*popular-manuf*/
 
 .popular-manuf {
-    width: 940px;
-    height: 419px;
-    background-color: var(--white);
+    background: var(--white);
 }
 
 .popular-manufact {
-    width: 940px;
-    height: 89px;
-    background-color: var(--grey);
+    background-color: var(-);
+    background: var(--grey);
 }
 
-.manufacturing li {
-    width: 220px;
-    height: 145px;
+.popular-manufact-name {
+    background-color: var(-);
+    background: var(--grey);
+    font-size: 30px;
+    line-height: 30px;
+}
+
+
+/*service*/
+
+.service {
+    background-color: var(--blue-light-light);
+}
+
+.sevice-name {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.service-story {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.service-option {
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 30px;
+    background-color: var(--white);
+    color: var(--blue-san);
+}
+
+.service-garanty {
+    text-decoration: none;
+    list-style: none;
+    background-color: var(--blue-san);
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--white);
+}
+
+.service-credit {
+    text-decoration: none;
+    list-style: none;
+    background-color: var(--blue-san);
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--white);
+}
+
+
+/*Посмотреть стилизацию*/
+
+.option-click-deliv {
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--blue-san);
+    text-transform: uppercase;
+}
+
+.option-click-deliv-story {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+
+/*about-tehnomart*/
+
+.about-tehnomart {
     background-color: var(--white);
 }
 
+.about-tehnomart-name {
+    font-size: 30px;
+    line-height: 30px;
+}
 
-/*Service*/
 
-.service {
-    width: 1200px;
-    height: 522px;
-    background-color: var(--blue-light-light);
+/*.linked-trans-company {}*/
+
+.tehnomart-name-story {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.trans-company {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.contact-down {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.contact-down-story {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+
+/*footer*/
+
+
+/*.footer {}*/
+
+.footer-nav {
+    background-color: var(--blue-san);
+}
+
+.footer-navigation {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--blue-light-light);
+}
+
+.footer-address {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--white-footer);
+}
+
+.footer-navigation-product {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--yellow-footer);
+}
+
+.footer-contacts {
+    background-color: var(--hard-blue);
+}
+
+.footer-protect {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--white);
+}
+
+.feedback {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--white);
+}
+
+.develop {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--white);
+}
+
+
+/*.logo-vk,
+    .logo-fb,
+    .logo-insta {
+    background-color: linear-gradient(0deg, #212A3A, #212A3A);
+    }
+    */
+
+.footer-link-mail,
+.footer-link-url {
+    color: var(--yellow-footer);
 }
